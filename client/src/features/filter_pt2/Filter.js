@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { json } from '../../shared/data.js';
 import { Container } from './Filter.css';
 
-//converts list of events to list of event cities
+//Converts list of event objects to list of event cities
 const eventCities = json.Items.map(event => {
   return event.VenueCity;
 });
@@ -10,13 +10,14 @@ const eventCities = json.Items.map(event => {
 const Filter = props => {
   const [selected, updateSelected] = useState('All Cities');
 
-  //Update selected value and  updates list of events
+  //Update selected value and  update list of events
   const handleSelect = e => {
     const city = e.target.value;
     updateSelected(city);
     filterEventsByCity(city);
   };
 
+  //Given a city string, update events state to events located in that city
   const filterEventsByCity = city => {
     let filteredEvents;
 
