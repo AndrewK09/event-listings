@@ -50,7 +50,11 @@ const EventList = ({ events }) => {
             </div>
 
             <div className={col4}>
-              <span>{event.MinPrice}</span>
+              {event.IsSoldOut ? (
+                <span>Sold Out</span>
+              ) : (
+                <span>{event.MinPrice}</span>
+              )}
             </div>
           </div>
         );
