@@ -21,7 +21,9 @@ const EventList = ({ events }) => {
         return (
           <div className={row} key={event.EventId}>
             <div className={col1}>
-              <span>{event.Date}</span>
+              <span>
+                {event.Day}, {event.Date}
+              </span>
               <span>{militaryToRegular(event.Time)}</span>
               <span
                 className={
