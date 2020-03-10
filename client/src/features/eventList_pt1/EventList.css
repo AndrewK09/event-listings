@@ -7,4 +7,56 @@
 .row {
   display: flex;
   flex-direction: row;
+  border: 1px solid gray;
+  border-bottom-width: 0;
+}
+
+.row:last-child {
+  border-bottom-width: 1px;
+}
+
+.col1,
+.col2,
+.col3,
+.col4 {
+  padding: 1%;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid gray;
+  flex-basis: 25%;
+}
+
+.isSellingFast {
+  display: block;
+  font-weight: bold;
+  color: rgb(191, 0, 0);
+}
+
+.isNotSellingFast {
+  display: none;
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.isCheapestCity {
+  display: block;
+}
+
+.isNotCheapestCity {
+  display: none;
+}
+
+.col3 {
+  flex-basis: 10%;
+}
+
+.col4 {
+  flex-basis: 15%;
 }
