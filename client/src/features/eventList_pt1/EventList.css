@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 0 10%;
 }
 
 .row {
@@ -9,7 +8,6 @@
   flex-direction: row;
   border: 1px solid gray;
   border-bottom-width: 0;
-  font: 1em/150% Arial, Helvetica, sans-serif;
 }
 
 .row:last-child {
