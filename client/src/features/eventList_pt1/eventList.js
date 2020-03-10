@@ -12,6 +12,8 @@ import {
   isNotCheapestCity,
 } from './EventList.css';
 
+import { militaryToRegular } from '../../shared/helpers.js';
+
 const EventList = ({ events }) => {
   return events ? (
     <div className={container}>
@@ -20,7 +22,7 @@ const EventList = ({ events }) => {
           <div className={row} key={event.EventId}>
             <div className={col1}>
               <span>{event.Date}</span>
-              <span>{event.Time}</span>
+              <span>{militaryToRegular(event.Time)}</span>
               <span
                 className={
                   event.IsSellingFast ? isSellingFast : isNotSellingFast
