@@ -2,24 +2,24 @@ import React from 'react';
 import styles from './EventList.css';
 
 const EventList = ({ events }) => {
-  const { container, row } = styles;
+  const { container, row, col1, col2 } = styles;
   return events ? (
     <div className={container}>
       {events.map(event => {
         return (
           <div className={row} key={event.EventId}>
-            <div>
-              <p>{event.Date}</p>
-              <p>{event.Time}</p>
+            <div className={col1}>
+              <span>{event.Date}</span>
+              <span>{event.Time}</span>
             </div>
 
-            <div>
-              <p>
+            <div className={col2}>
+              <span>
                 {event.VenueName}, {event.VenueCity}, {event.VenueCountry}
-              </p>
-              <p>{event.VenueCapacity}</p>
-              <p>{event.EventName}</p>
-              <p>{event.MinPrice}</p>
+              </span>
+              <span>{event.VenueCapacity}</span>
+              <span>{event.EventName}</span>
+              <span>{event.MinPrice}</span>
             </div>
           </div>
         );
