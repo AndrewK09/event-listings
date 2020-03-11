@@ -31,3 +31,6 @@ To start a production server:
 ```sh
 npm run start-dev
 ```
+
+Click this link or go to http://localhost:3000 to open the event listing page
+[Elton John Listings](http://localhost:3000)
