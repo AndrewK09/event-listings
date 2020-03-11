@@ -1,4 +1,4 @@
-# event-listings
+# Event-listings
 
 ## Building and Running
 
@@ -32,5 +32,5 @@ To start a production server:
 npm run start-dev
 ```
 
-Click this link or go to http://localhost:3000 to open the event listing page
-[Elton John Listings](http://localhost:3000)
+Go to http://localhost:3000 to open the event listing page
+
