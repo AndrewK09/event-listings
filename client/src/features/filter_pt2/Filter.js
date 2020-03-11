@@ -52,3 +52,10 @@ const Filter = props => {
 };
 
 export default Filter;
+
+/*
+PART 3:
+I feel that filtering is a great option, but just being able to filter by cities is not sufficient enough. 
+I think when customers look for events, they might want to filter based off other things as well, such as dates and price ranges. 
+
+*/
